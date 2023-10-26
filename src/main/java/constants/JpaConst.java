@@ -15,14 +15,14 @@ public interface JpaConst {
     //従業員テーブル
     String TABLE_EMP = "employees"; //テーブル名
     //従業員テーブルカラム
-    String EM_COL_ID ="id"; //id
-    String EM_COL_CODE ="code"; //社員番号
-    String EM_COL_NAME ="name"; //氏名
-    String EM_COL_PASS ="password"; //パスワード
-    String EM_COL_ADMIN_FLAG ="admin_flag"; //管理者権限
-    String EM_COL_CREATED_AT ="created_at"; //登録日時
-    String EM_COL_UPDATED_AT ="updated_at"; //更新日時
-    String EM_COL_DELETE_FLAG ="delete_flag"; //削除フラグ
+    String EMP_COL_ID ="id"; //id
+    String EMP_COL_CODE ="code"; //社員番号
+    String EMP_COL_NAME ="name"; //氏名
+    String EMP_COL_PASS ="password"; //パスワード
+    String EMP_COL_ADMIN_FLAG ="admin_flag"; //管理者権限
+    String EMP_COL_CREATED_AT ="created_at"; //登録日時
+    String EMP_COL_UPDATED_AT ="updated_at"; //更新日時
+    String EMP_COL_DELETE_FLAG ="delete_flag"; //削除フラグ
 
     int ROLE_ADMIN = 1;  //管理者権限ON（管理者）
     int ROLE_GENERAL =0;//管理者権限OFF（一般）
