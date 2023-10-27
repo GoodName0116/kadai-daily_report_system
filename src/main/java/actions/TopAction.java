@@ -16,9 +16,10 @@ public class TopAction extends ActionBase {
     /**
      * indexメソッドを実行する
      */
-
     @Override
     public void process() throws ServletException, IOException {
+
+        //メソッドを実行
         invoke();
 
     }
@@ -26,12 +27,11 @@ public class TopAction extends ActionBase {
     /**
      * 一覧画面を表示する
      */
-
     public void index() throws ServletException, IOException {
 
-        //セッションにフラッシュメッセージが設定されている場合はリクエストスコープに移し替え、セッションから削除する
+        //セッションにフラッシュメッセージが設定されている場合はリクエストスコープに移し替え、セッションからは削除する
         String flush = getSessionScope(AttributeConst.FLUSH);
-        if (flush !=null) {
+        if (flush != null) {
             putRequestScope(AttributeConst.FLUSH, flush);
             removeSessionScope(AttributeConst.FLUSH);
         }
